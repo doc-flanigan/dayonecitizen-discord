@@ -94,8 +94,8 @@ const payload = {
           channel_ids: [],
         },
         {
-          title: 'IAE / ILW ship expos',
-          description: 'The big free-flight in-game ship shows',
+          title: 'Sales & ship expos',
+          description: 'Starter-pack sales, Free Fly weeks and the big IAE / ILW ship shows',
           emoji_name: '🛰️',
           role_ids: [ROLES.iaeIlw],
           channel_ids: [],
@@ -110,7 +110,7 @@ const res = await fetch(`https://discord.com/api/v10/guilds/${GUILD}/onboarding`
   headers: {
     Authorization: `Bot ${TOKEN}`,
     'content-type': 'application/json',
-    'X-Audit-Log-Reason': 'Native onboarding - shopfront revival (replaces carl-bot plan)',
+    'X-Audit-Log-Reason': 'Onboarding: rename expo ping to Sales & ship expos',
   },
   body: JSON.stringify(payload),
 });
